@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f6e5ec, #7e7e7e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Main container */
+main {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Centering and styling the h1 */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling the button */
+button {
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  margin: 1rem 0;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling the color display container */
+.color-display {
+  width: 350px;
+  height: 250px;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  transition: background-color 0.5s ease;
+}
+
+/* Styling the h3 inside the color display */
+.color-display h3 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Add responsive styling */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .color-display {
+    width: 90%;
+    height: 200px;
+  }
+
+  .color-display h3 {
+    font-size: 1.2rem;
+  }
+}
